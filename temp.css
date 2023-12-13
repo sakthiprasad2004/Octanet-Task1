@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.login-box,
+.home-content {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ecf0f1;
+}
+
+.login-box h2,
+.home-content h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ecf0f1;
+    border: none;
+    border-bottom: 1px solid #ecf0f1;
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ecf0f1;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3498db;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #ecf0f1;
+    background: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.signup,
+.forgot {
+    color: #ecf0f1;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.signup a,
+.forgot a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover,
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styling for home page content */
+.home-content p {
+    margin-top: 20px;
+}
+
+.home-content a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-content a:hover {
+    text-decoration: underline;
+}
